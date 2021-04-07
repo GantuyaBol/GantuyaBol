@@ -1,0 +1,137 @@
+package Lab2;
+import java.util.*;
+
+public class Flower {
+
+    String name;
+    public Flower (String name) {
+        this.name=name;
+    }
+    public void Tsetseg() {
+        // This constructor has one parameter, name.
+        System.out.println("Finding flower types:" + name );
+    }
+
+    public static void main (String[] args) {
+        // TODO Auto-generated method stub
+    	Flower type = new Flower ("types");
+    	Flower sunflower  = new sunflower("sunflower");
+    	Flower rose  = new rose("rose");
+    	Flower lily   = new lily ("lily");
+    	Flower abutilon   = new abutilon ("abutilon");
+    	Flower daisy  = new daisy("daisy");
+    	Flower alstroemeria	 = new alstroemeria ("alstroemeria");
+    	Flower aster	 = new aster("aster");
+    	Flower bell = new bell("bell");
+
+        ArrayList<Flower> al = new ArrayList<Flower>();
+        al.add(type);
+        al.add(sunflower);
+        al.add(rose);
+        al.add(lily);
+        al.add(abutilon);
+        al.add(daisy);
+        al.add(alstroemeria);
+        al.add(aster);
+        al.add(bell);
+    }
+
+}
+class sunflower extends Flower{
+
+    public sunflower(String name) {
+		super(name);
+		// TODO Auto-generated constructor stub
+	}
+
+    public void tsetseg1() {
+        // This constructor has one parameter, name.
+        System.out.println("narand iluu sain urgana:" + name );
+    }
+
+
+}
+class rose extends Flower{
+
+    
+    public rose (String name) {
+        super(name);
+
+    }
+
+    public void Tsetseg2() {
+        // This constructor has one parameter, name.
+        System.out.println("hun buriin meddeg tsetseg:" + name );
+    }
+}
+
+class lily extends Flower {
+
+  
+    public lily (String name) {
+        super(name);
+ 
+
+    }
+    public void Tsetseg3() {
+        // This constructor has one parameter, name.
+        System.out.println("Tsagaan ungotei:" + name );
+    }
+
+
+}
+class abutilon extends Flower{
+
+    public abutilon (String name) {
+        super(name);
+    }
+
+    public void Tsetseg4() {
+        // This constructor has one parameter, name.
+        System.out.println("Ulbar shar ongotei:" + name );
+    }
+}
+class daisy extends Flower{
+
+    public daisy(String name) {
+        super(name);
+    }
+
+    public void Tsetseg4() {
+        // This constructor has one parameter, name.
+        System.out.println("nil ygaan ongotei africiin" + name );
+    }
+}
+
+class alstroemeria extends Flower{
+
+
+    public alstroemeria (String name) {
+        super(name);
+
+    }
+    public void Tsetseg5() {
+        // This constructor has one parameter, name.
+        System.out.println("Boognorch urgaag ygaan ungutei:" + name );
+    }
+}
+
+class aster extends Flower{
+	
+
+	public aster(String name) {
+		super(name);
+	}
+	public void Tsetseg6() {
+	System.out.println("Taliin tsetseg:" + name);
+	}
+}
+class bell extends Flower{
+	
+	public bell(String name) {
+		super(name);
+	}
+	public void Tsetseg7() {
+	System.out.println("Honh shig helbertei :" + name);
+	}
+}
